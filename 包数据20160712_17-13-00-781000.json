@@ -1,0 +1,1720 @@
+[
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-002 张宏军-成蒲铁路110kV及以上电力线路迁改工程第五批次（220kV兴侯南、北线电缆段）电缆附件开标记录.xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "包1", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.112, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 11.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "NKT", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 171.0, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 149.39964, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 161.59553854545456, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 161.59553854545456, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 163.8, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": 153.0, 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 153.0, 
+                        "row": 10
+                    }
+                ], 
+                "name": "包1"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-004 傅强-2015年统签电缆年度集中招标12月第二批（包2） 开标记录表 .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "包2", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.0206, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 12.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "特变电工股份有限公司", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 551.892609, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 485.26753, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 521.6733466666666, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 521.6733466666666, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 519.0421934999999, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": 493.611595, 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 513.0256, 
+                        "row": 10
+                    }
+                ], 
+                "name": "包1"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-006 傅强-2015年统签电缆年度集中招标12月第二批（包3） 开标记录表 .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "包3", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.0195, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 12.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "江苏华远电缆有限公司", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 517.6749, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 403.820055, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 446.38657708333335, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 446.38657708333335, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 435.6081775, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": 412.43994, 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 431.2013, 
+                        "row": 10
+                    }
+                ], 
+                "name": "包3"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-010 张宏军-四川朝雅铁路35kv电缆采购开标记录.xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "包1", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.033, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 7.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "亨通", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 341.66174, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 283.173415, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 314.60763271428567, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 314.60763271428567, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 318.62844, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": 305.67888, 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 321.794, 
+                        "row": 10
+                    }
+                ], 
+                "name": "包1"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-011 傅强-国家电力投资集团公司二〇一六年度第八批集中招标 开标记录表.xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "标段2", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.0405, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 11.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "Error", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 14367148.19, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 10910747.61, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 12791095.075454546, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 12791095.075454546, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 12542112.52, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": "Error", 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 12982187.78, 
+                        "row": 10
+                    }
+                ], 
+                "name": "标段2"
+            }, 
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "标段3", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.0411, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 9.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "Error", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 9660293.2, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 7723821.0, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 8478903.688888889, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 8478903.688888889, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 8394194.9, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": "Error", 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 8569304.5, 
+                        "row": 10
+                    }
+                ], 
+                "name": "标段3"
+            }, 
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "标段6", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.0408, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 12.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "Error", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 11316663.5, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 8860977.3, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 9870325.008333335, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 9870325.008333335, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 9822239.15, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": "Error", 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 10153904.6, 
+                        "row": 10
+                    }
+                ], 
+                "name": "标段6"
+            }, 
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "标段7", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.0408, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 13.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "Error", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 14416334.0, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 11578676.0, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 12570882.307692308, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 12570882.307692308, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 12278756.0, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": "Error", 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 13310796.0, 
+                        "row": 10
+                    }
+                ], 
+                "name": "标段7"
+            }, 
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "标段8", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.0404, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 10.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "Error", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 3383260.0, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 2861725.0, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 3149971.3, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 3149971.3, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 3162970.0, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": "Error", 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 3298634.0, 
+                        "row": 10
+                    }
+                ], 
+                "name": "标段8"
+            }, 
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "标段9", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.0413, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 10.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "Error", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 8674907.7, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 7366657.3, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 7877903.15, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 7877903.15, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 7643703.85, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": "Error", 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 8647326.2, 
+                        "row": 10
+                    }
+                ], 
+                "name": "标段9"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-015 傅强-瑞之源华中调度楼 开标记录表  - 副本.xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "标段1", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.0612, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 13.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "无锡江南", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 434.1119, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 384.845095, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 410.6855034615385, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 410.6855034615385, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 412.68456, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": 384.845095, 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 421.833, 
+                        "row": 10
+                    }
+                ], 
+                "name": "包1"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-016 傅强-武汉理工大学110kV变电站配套工程  开标记录表 .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "标段1", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.0617, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 11.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "武汉市黄鹤电线电缆一厂", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 274.1744, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 239.59684, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 258.7759309090909, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 258.7759309090909, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 261.5, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": 264.335, 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 263.5, 
+                        "row": 10
+                    }
+                ], 
+                "name": "标段1"
+            }, 
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "标段2", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.0612, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 11.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "武汉武湖电缆", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 299.88779, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 265.19357, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 287.09739545454545, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 287.09739545454545, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 292.2307, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": 293.733, 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 292.2307, 
+                        "row": 10
+                    }
+                ], 
+                "name": "标段2"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-017周建国- 大庆中蓝石化有限公司中压电力电缆框架 开标记录表 .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": 0.0, 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.0946, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 3.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "NKT", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 771.485, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 683.15, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 735.3366666666667, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 735.3366666666667, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 751.375, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": 683.15, 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 683.15, 
+                        "row": 10
+                    }
+                ], 
+                "name": "标段2"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-017周建国- 大庆中蓝石化有限公司中压电力电缆框架 开标记录表V1.0 .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": 0.0, 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.0946, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 3.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "NKT", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 771.485, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 683.15, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 735.3366666666667, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 735.3366666666667, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 751.375, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": 683.15, 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 683.15, 
+                        "row": 10
+                    }
+                ], 
+                "name": "标段2"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-018 周建国-尧化门-经港220kv铁北输变电工程(电力电缆)开标记录表 .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": 0.0, 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.0812, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 13.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "焦作汉河", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 1788.7042, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 1467.506, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 1586.450807692308, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 1586.450807692308, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 1527.3844, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": 1467.506, 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 1714.0466, 
+                        "row": 10
+                    }
+                ], 
+                "name": "尧化门"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-030 傅强-大唐4月统签（包2） 开标记录表 .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "包2", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.019, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 20.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "宝胜科技创新股份有限公司", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 456.184529, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 362.038842, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 429.5482822, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 429.5482822, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 437.34376599999996, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": 396.935805, 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 438.4126, 
+                        "row": 10
+                    }
+                ], 
+                "name": "包1"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-039 徐政-中盐安徽红四方股份有限公司 开标记录表  .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": 0.0, 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.015, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 10.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "Error", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 620.743625, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 495.93232, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 551.6239087, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 551.6239087, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 555.109783, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": "Error", 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 571.85276, 
+                        "row": 10
+                    }
+                ], 
+                "name": "包5"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-040 傅强-大唐5月统签（包4） 开标记录表  .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "包4", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.0162, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 17.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "远程电缆股份有限公司", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 651.00828, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 560.457835, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 616.1743761176471, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 616.1743761176471, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 628.9625, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": 576.695979, 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 644.8689, 
+                        "row": 10
+                    }
+                ], 
+                "name": "包4"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-041 傅强-大唐5月统签（包5） 开标记录表  .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "包5", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.015, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 20.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "江苏亨通电力电缆有限公司", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 1675.30332, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 1528.02696, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 1608.4017408, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 1608.4017408, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 1603.808975, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": 1556.5, 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 1629.569, 
+                        "row": 10
+                    }
+                ], 
+                "name": "包5"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-045 周建国-扬州集体资产——开标记录表  .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": 0.0, 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.015, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 11.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "Error", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 62.063, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 55.0766, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 58.5275, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 58.5275, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 57.9885, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": "Error", 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 61.3125, 
+                        "row": 10
+                    }
+                ], 
+                "name": "开标记录"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-058 傅强-大唐6月统签（包6） 开标记录表  .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "包6", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.0854, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 19.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "浙江万马股份有限公司", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 1729.2899, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 1411.439501, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 1557.3500075789477, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 1557.3500075789477, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 1563.90688, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": 1454.019316, 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 1613.0728, 
+                        "row": 10
+                    }
+                ], 
+                "name": "包6"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-059 傅强-大唐6月统签（包7） 开标记录表  .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "包7", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.0763, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 18.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "江苏中辰电缆有限公司", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 1532.875271, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 1248.184134, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 1401.7904693611113, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 1401.7904693611113, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 1391.2034675, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": 1319.628237, 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 1501.0389, 
+                        "row": 10
+                    }
+                ], 
+                "name": "包7"
+            }
+        ]
+    }
+]

@@ -1,0 +1,784 @@
+[
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-002 张宏军-成蒲铁路110kV及以上电力线路迁改工程第五批次（220kV兴侯南、北线电缆段）电缆附件开标记录.xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 1, 
+                        "name": "工作号", 
+                        "value": "NCL-T16-002", 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "开标时间", 
+                        "value": 42396.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "销售员", 
+                        "value": "张宏军", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目单位", 
+                        "value": "四川科锐得实业集团有限公司", 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目名称", 
+                        "value": "成蒲铁路110kV及以上电力线路迁改工程第五批次（220kV兴侯南、北线电缆段）220KV电缆附件", 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "csc专员", 
+                        "value": "王莺", 
+                        "row": 6
+                    }
+                ], 
+                "name": "基本信息"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-004 傅强-2015年统签电缆年度集中招标12月第二批（包2） 开标记录表 .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 1, 
+                        "name": "工作号", 
+                        "value": "NCL-T16-004", 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "开标时间", 
+                        "value": 42395.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "销售员", 
+                        "value": "傅强", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目单位", 
+                        "value": "中国水利电力物资集团有限公司", 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目名称", 
+                        "value": "", 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "csc专员", 
+                        "value": "夏新梅", 
+                        "row": 6
+                    }
+                ], 
+                "name": "基本信息"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-006 傅强-2015年统签电缆年度集中招标12月第二批（包3） 开标记录表 .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 1, 
+                        "name": "工作号", 
+                        "value": "NCL-T16-006", 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "开标时间", 
+                        "value": 42395.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "销售员", 
+                        "value": "傅强", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目单位", 
+                        "value": "中国水利电力物资集团有限公司", 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目名称", 
+                        "value": "", 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "csc专员", 
+                        "value": "夏新梅", 
+                        "row": 6
+                    }
+                ], 
+                "name": "基本信息"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-010 张宏军-四川朝雅铁路35kv电缆采购开标记录.xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 1, 
+                        "name": "工作号", 
+                        "value": "NCL-T16-010", 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "开标时间", 
+                        "value": 42418.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "销售员", 
+                        "value": "张宏军", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目单位", 
+                        "value": "四川科锐得实业集团有限公司", 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目名称", 
+                        "value": "朝阳湖到雅安铁路35kV及以上电力设施（四川段）迁改工程第一、二批次\n电力电缆采购\n", 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "csc专员", 
+                        "value": "王莺", 
+                        "row": 6
+                    }
+                ], 
+                "name": "基本信息"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-011 傅强-国家电力投资集团公司二〇一六年度第八批集中招标 开标记录表.xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 1, 
+                        "name": "工作号", 
+                        "value": "NCL-T16-011", 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "开标时间", 
+                        "value": 42424.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "销售员", 
+                        "value": "傅强", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目单位", 
+                        "value": "国家电力投资集团公司", 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目名称", 
+                        "value": "国家电力投资集团公司\n二〇一六年度第八批集中招标", 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "csc专员", 
+                        "value": "夏新梅", 
+                        "row": 6
+                    }
+                ], 
+                "name": "基本信息"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-015 傅强-瑞之源华中调度楼 开标记录表  - 副本.xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 1, 
+                        "name": "工作号", 
+                        "value": "NCL-T16-015", 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "开标时间", 
+                        "value": 42426.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "销售员", 
+                        "value": "傅强", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目单位", 
+                        "value": "武汉华源电力集团有限公司物资分公司", 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目名称", 
+                        "value": " 国网华中分布调度楼10KV电缆", 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "csc专员", 
+                        "value": "夏新梅", 
+                        "row": 6
+                    }
+                ], 
+                "name": "基本信息"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-016 傅强-武汉理工大学110kV变电站配套工程  开标记录表 .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 1, 
+                        "name": "工作号", 
+                        "value": "NCL-T16-016", 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "开标时间", 
+                        "value": 42423.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "销售员", 
+                        "value": "傅强", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目单位", 
+                        "value": "武汉华源电力集团有限公司物资分公司", 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目名称", 
+                        "value": "武汉理工大学110kV变电站配套工程", 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "csc专员", 
+                        "value": "夏新梅", 
+                        "row": 6
+                    }
+                ], 
+                "name": "基本信息"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-017周建国- 大庆中蓝石化有限公司中压电力电缆框架 开标记录表 .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 1, 
+                        "name": "工作号", 
+                        "value": "NCL-T16-017", 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "开标时间", 
+                        "value": 42429.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "销售员", 
+                        "value": "周建国", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目单位", 
+                        "value": "大庆中蓝石化有限公司", 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目名称", 
+                        "value": "年度框架", 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "csc专员", 
+                        "value": "夏新梅", 
+                        "row": 6
+                    }
+                ], 
+                "name": "基本信息"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-017周建国- 大庆中蓝石化有限公司中压电力电缆框架 开标记录表V1.0 .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 1, 
+                        "name": "工作号", 
+                        "value": "NCL-T16-017", 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "开标时间", 
+                        "value": 42429.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "销售员", 
+                        "value": "周建国", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目单位", 
+                        "value": "大庆中蓝石化有限公司", 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目名称", 
+                        "value": "年度框架", 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "csc专员", 
+                        "value": "夏新梅", 
+                        "row": 6
+                    }
+                ], 
+                "name": "基本信息"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-018 周建国-尧化门-经港220kv铁北输变电工程(电力电缆)开标记录表 .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 1, 
+                        "name": "工作号", 
+                        "value": "NCL-T16-018", 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "开标时间", 
+                        "value": 42440.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "销售员", 
+                        "value": "周建国", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目单位", 
+                        "value": "江苏宁供集体资产运营中心科贸分中心", 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目名称", 
+                        "value": "尧化门-经港220kv铁北输变电工程(电力电缆)项目", 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "csc专员", 
+                        "value": "夏新梅", 
+                        "row": 6
+                    }
+                ], 
+                "name": "基本信息"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-030 傅强-大唐4月统签（包2） 开标记录表 .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 1, 
+                        "name": "工作号", 
+                        "value": "NCL-T16-030", 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "开标时间", 
+                        "value": 42485.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "销售员", 
+                        "value": "傅强", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目单位", 
+                        "value": "中国水利电力物资有限公司", 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目名称", 
+                        "value": "大唐海阳徐家店风电场一期工程、大唐赤峰罕山风电项目100MW工程、内蒙古大唐国际托克托电厂五期、大唐环境总包-内蒙古大唐国际托克托电厂五期输煤EPC、陕西安塞榆树湾风电场49.5MW工程", 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "csc专员", 
+                        "value": "夏新梅", 
+                        "row": 6
+                    }
+                ], 
+                "name": "基本信息"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-039 徐政-中盐安徽红四方股份有限公司 开标记录表  .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 1, 
+                        "name": "工作号", 
+                        "value": "NCL-T16-039", 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "开标时间", 
+                        "value": 42508.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "销售员", 
+                        "value": "徐政", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目单位", 
+                        "value": "中盐安徽红四方股份有限公司", 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目名称", 
+                        "value": "", 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "csc专员", 
+                        "value": "夏新梅", 
+                        "row": 6
+                    }
+                ], 
+                "name": "基本信息"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-040 傅强-大唐5月统签（包4） 开标记录表  .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 1, 
+                        "name": "工作号", 
+                        "value": "NCL-T16-040", 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "开标时间", 
+                        "value": 42500.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "销售员", 
+                        "value": "傅强", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目单位", 
+                        "value": "中国水利电力物资集团有限公司", 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目名称", 
+                        "value": "大唐三门峡发电有限责任公司、三门峡华阳发电有限责任公司、大庆青山风电场项目、大唐鲁北发电有限责任公司、四川巴中通江县洪口水电站、大唐环境总包-大唐八〇三发电厂“上大压小”热电联产扩建工程、大唐定边油房庄330kv联合升压站", 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "csc专员", 
+                        "value": "夏新梅", 
+                        "row": 6
+                    }
+                ], 
+                "name": "基本信息"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-041 傅强-大唐5月统签（包5） 开标记录表  .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 1, 
+                        "name": "工作号", 
+                        "value": "NCL-T16-041", 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "开标时间", 
+                        "value": 42500.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "销售员", 
+                        "value": "傅强", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目单位", 
+                        "value": "中国水利电力物资集团有限公司", 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目名称", 
+                        "value": "大唐环境总包-大唐国际张家口发电厂1～8号机组环保设施超低排放改造工程", 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "csc专员", 
+                        "value": "夏新梅", 
+                        "row": 6
+                    }
+                ], 
+                "name": "基本信息"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-045 周建国-扬州集体资产——开标记录表  .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 1, 
+                        "name": "工作号", 
+                        "value": "NCL-T16-045", 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "开标时间", 
+                        "value": 42501.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "销售员", 
+                        "value": "周建国", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目单位", 
+                        "value": "扬州广源集团有限公司", 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目名称", 
+                        "value": "江苏杨供集体资产运营中心110kV广平线 ", 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "csc专员", 
+                        "value": "夏新梅", 
+                        "row": 6
+                    }
+                ], 
+                "name": "基本信息"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-058 傅强-大唐6月统签（包6） 开标记录表  .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 1, 
+                        "name": "工作号", 
+                        "value": "NCL-T16-058", 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "开标时间", 
+                        "value": 42556.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "销售员", 
+                        "value": "傅强", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目单位", 
+                        "value": "中国水利电力物资集团有限公司", 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目名称", 
+                        "value": "大唐黄岛发电有限责任公司03号甲乙皮带电缆工程、大唐宜阳木兰沟风电场工程、大唐赤峰头道沟风电项目工程、大唐新平县向阳山风电场工程、大唐姜堰燃机热电联产项目工程", 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "csc专员", 
+                        "value": "夏新梅", 
+                        "row": 6
+                    }
+                ], 
+                "name": "基本信息"
+            }
+        ]
+    }, 
+    {
+        "name": "C:\\Users\\adam\\Desktop\\bidding_xls\\NCL-T16-059 傅强-大唐6月统签（包7） 开标记录表  .xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 1, 
+                        "name": "工作号", 
+                        "value": "NCL-T16-058", 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "开标时间", 
+                        "value": 42556.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "销售员", 
+                        "value": "傅强", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目单位", 
+                        "value": "中国水利电力物资集团有限公司", 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "项目名称", 
+                        "value": "大唐曲靖红石岩风电场工程、平阴风电场三期工程、张家口发电厂1-4号机（电气）供热改造工程", 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 1, 
+                        "name": "csc专员", 
+                        "value": "夏新梅", 
+                        "row": 6
+                    }
+                ], 
+                "name": "基本信息"
+            }
+        ]
+    }
+]
