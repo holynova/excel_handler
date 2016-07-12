@@ -8,6 +8,7 @@ import json
 import datetime
 
 
+
 class ExcelHandler():
 	def __init__(self,folder_path=None):
 		pass
@@ -34,55 +35,64 @@ class ExcelHandler():
 			return results
 
 	def get_data_from_xls(self,sheet_filter = None,cells = []):
+		'''
+		从xls表格中读取数据
+		sheet_filter 是sheet名过滤器
+		cell 是单元格描述数组
+		cell[i] = (name,row,col)
+		'''
+		data_wbs = []
 		for file in self.files:
+			# print file
 			if re.search(r'.xls$',file):
+				# logging.error(file)
+				# logging.error(type(file))
 				try:
 					wb = xlrd.open_workbook(file)
 				except:
 					logging.error('fail to open ',file)
 					continue
 				data_wb = DataWorkbook(file)
-
+				sht_list = []
 				for sht in wb.sheets():
 					if sheet_filter:
 						if not re.search(sheet_filter,sht.name):
 							continue
 					data_sheet = DataSheet(sht.name)
-					# logging.warning('sht'+sht.name)
-					# data_sheet.cells = [DataCell(name,row,col,sht.cell_value(row,col)) for name,row,col in cells]
-					# logging.error('in sheet loop '+sht.name)
 					cell_list = []
 					for name,row,col in cells: 
-						# logging.error('in cell loop '+name+","+str(row)+","+str(col))
-						# try:
-						# 	cell_value = sht.cell_value(row,col)
-						# except:
-						# 	logging.error('cell(%d,%d) value error' %(row,col)) 
-						# 	cell_value = None
-						cell_value = "test"
-						logging.error( sht.cell_type(row,col))
-						
+						try:
+							cell_type = sht.cell_type(row,col)
+							if cell_type == 5:#公式错误
+								cell_value = "Error"
+							else:
+								cell_value = sht.cell_value(row,col)
+						except:
+							logging.error('array index out of range for cell(%s,%d,%d) in sheet %s in file ' %(name,row,col,sht.name))
+							cell_value = None
+							# continue
 						cell_list.append(DataCell(name,row,col,cell_value))
-						# data_sheet.cells.append(DataCell(name,row,col,cell_value))
-						# logging.error(len(data_sheet.cells))
 					data_sheet.cells = cell_list
-
-					data_wb.sheets.append(data_sheet)
-		self.data_wb = data_wb
+					sht_list.append(data_sheet)
+				data_wb.sheets = sht_list
+				data_wbs.append(data_wb)
+		self.data_wbs = data_wbs
 		return data_wb
 
 	def save_to_json(self,file_name="",obj = None):
 		if file_name == "":
 			file_name = "data" + self.get_datetime_str() + ".json"
 		if obj == None:
-			obj = self.data_wb
-		json_str = json.dumps(obj,default = lambda o:o.__dict__,indent = 4)
-		self.save_to_file(file_name)
+			obj = self.data_wbs
+		json_str = json.dumps(obj,default = lambda o:o.__dict__,indent = 4,ensure_ascii = False)
+		self.save_to_file(file_name,json_str)
 	
 	def save_to_file(self,result_file_name = "",content ="hello world"):
+		cur_dir = os.path.dirname(os.path.abspath(__file__))
+
 		if result_file_name == "":
 			result_file_name = 'save' + self.get_datetime_str() +".txt"
-		with open(result_file_name,"w") as result_file:
+		with open(os.path.join(cur_dir,result_file_name),"w") as result_file:
 			result_file.write(content.encode('utf-8'))
 
 		print "Saved to file: " + result_file_name
@@ -90,6 +100,29 @@ class ExcelHandler():
 	
 	def get_datetime_str(self):
 		return datetime.datetime.now().strftime('%y%m%d_%H-%M-%S')
+
+	def print_data(self):
+		#输出标题行
+		# title_line = "".join([str(cell.name) for cell in self.data_wbs[0].sheets[0].cells])
+		# print title_line
+		title_line = ""
+		for cell in self.data_wbs[0].sheets[0].cells:
+			title_line += cell.name+","
+		print title_line
+
+
+		for wb in self.data_wbs:
+			for sht in wb.sheets:
+				data_line = ''
+				for cell in sht.cells:
+					print "%s," %(cell.value),
+				print ""
+					# data_line += str(cell.value) 
+				# data_line = "".join([str(cell.value) for cell in self.data_wbs[0].sheets[0].cells])
+				# print data_line
+				# print "\n"
+
+
 
 
 class DataCell():
@@ -111,7 +144,7 @@ class DataSheet():
 
 class DataWorkbook():
 	def __init__(self,name,sheets = []):
-		self.name = name 
+		self.name = name.decode('gbk')#处理中文文件名问题
 		self.sheets = sheets
 
 
@@ -129,7 +162,7 @@ def unit_test2():
 	# for f in files:
 	# 	print f
 	hand.get_data_from_xls(
-		# sheet_filter = u'包',
+		sheet_filter = u'包',
 		cells = [
 		(u"num",0,19),
 		(u"nkt_gm3",1,19),
@@ -143,20 +176,61 @@ def unit_test2():
 		(u"winner_price",9,19),
 		(u"nkt_price",10,19)
 		])
-	print hand.data_wb.name
-	for sht in hand.data_wb.sheets:
-		print '--',sht.name
-		for cell in sht.cells:
-			print '----',cell.name,cell.value
-	# data_wb = DataWorkbook()
-	# print dir(hand.data_wb),dir(hand.data_wb.sheets[0]),dir(hand.data_wb.sheets[0].cells[0])
-	# hand.save_to_json()
-	# print json.dumps(hand.data_wb, default = lambda o:o.__dict__, indent = 4)
-	# print json.dumps(hand.data_wb, indent = 4)
-	# print hand.data_wb.sheets
+
+	hand.save_to_json()
+def get_sheet_names(folder):
+	hand = ExcelHandler()
+	hand.find_filenames(folder)
+	hand.get_data_from_xls()
+	for wb in hand.data_wbs:
+		for sht in wb.sheets:
+			print wb.name,sht.name
+		# print "-"*100
+		# print wb.name
+		# print [sht.name for sht in wb.sheets]
+
+		# print len(wb.sheets)
+		# for sht in wb.sheets:
+		# 	print sht.name,
+def get_bid_data():
+	folder = r"C:\Users\adam\Desktop\bidding_xls"
+	handler = ExcelHandler()
+	handler.find_filenames(folder)
+
+	handler.get_data_from_xls(
+		sheet_filter = u"基本信息",
+		cells =[
+		(u'工作号',1,1),
+		(u'开标时间',2,1),
+		(u'销售员',3,1),
+		(u'项目单位',4,1),
+		(u'项目名称',5,1),
+		(u'csc专员',6,1),
+		])
+	handler.save_to_json(u'基本信息.json')
+	handler.print_data()
+	handler.get_data_from_xls(
+		sheet_filter = ur'[(包)(标段)(开标)(门)]',
+		cells = [
+		(u"num",0,19),
+		(u"nkt_gm3",1,19),
+		(u"num_company",2,19),
+		(u"winner",3,19),
+		(u"min",4,19),
+		(u"max",5,19),
+		(u"average",6,19),
+		(u"average_no_peak",7,19),
+		(u"median",8,19),
+		(u"winner_price",9,19),
+		(u"nkt_price",10,19)
+		])
+	handler.save_to_json(u'包数据.json')
+	handler.print_data()
 
 
 
 
 if __name__ == "__main__":
-	unit_test2()
+	# unit_test2()
+	# get_sheet_names(r"C:\Users\adam\Desktop\bidding_xls")
+	get_bid_data()
