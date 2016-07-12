@@ -67,6 +67,12 @@ class ExcelHandler():
 								cell_value = "Error"
 							else:
 								cell_value = sht.cell_value(row,col)
+								#滤除value中的换行符
+								if isinstance(cell_value,str):
+									# logging.warning(cell_value)
+									# print 'new line',cell_value
+									cell_value = cell_value.strip('\n')#.replace('\r',"")
+
 						except:
 							logging.error('array index out of range for cell(%s,%d,%d) in sheet %s in file ' %(name,row,col,sht.name))
 							cell_value = None
@@ -105,7 +111,7 @@ class ExcelHandler():
 		#输出标题行
 		# title_line = "".join([str(cell.name) for cell in self.data_wbs[0].sheets[0].cells])
 		# print title_line
-		title_line = ""
+		title_line = "file_name,"
 		for cell in self.data_wbs[0].sheets[0].cells:
 			title_line += cell.name+","
 		print title_line
@@ -113,7 +119,8 @@ class ExcelHandler():
 
 		for wb in self.data_wbs:
 			for sht in wb.sheets:
-				data_line = ''
+				# data_line = ''
+				print wb.name+",",
 				for cell in sht.cells:
 					print "%s," %(cell.value),
 				print ""

@@ -1,0 +1,580 @@
+[
+    {
+        "name": "E:\\kuaipan\\github\\excel_handler\\test_xls\\test.xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "包1", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.209, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 14.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "Error", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 690687.0, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 461440.0, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 595783.3571428572, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 595783.3571428572, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 612537.5, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": "Error", 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 629380.0, 
+                        "row": 10
+                    }
+                ], 
+                "name": "包1"
+            }, 
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "包2", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.209, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 15.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "Error", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 770000.0, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 482440.0, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 608990.6, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 608990.6, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 612300.0, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": "Error", 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 629380.0, 
+                        "row": 10
+                    }
+                ], 
+                "name": "包2"
+            }, 
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "包1", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.209, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 14.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "Error", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 690687.0, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 461440.0, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 595783.3571428572, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 595783.3571428572, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 612537.5, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": "Error", 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 629380.0, 
+                        "row": 10
+                    }
+                ], 
+                "name": "包1"
+            }, 
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "包2", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.209, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 15.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "Error", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 770000.0, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 482440.0, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 608990.6, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 608990.6, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 612300.0, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": "Error", 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 629380.0, 
+                        "row": 10
+                    }
+                ], 
+                "name": "包2"
+            }
+        ]
+    }, 
+    {
+        "name": "E:\\kuaipan\\github\\excel_handler\\test_xls\\中文当.xls", 
+        "sheets": [
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "包1", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.209, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 14.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "Error", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 690687.0, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 461440.0, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 595783.3571428572, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 595783.3571428572, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 612537.5, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": "Error", 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 629380.0, 
+                        "row": 10
+                    }
+                ], 
+                "name": "包1"
+            }, 
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "包2", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.209, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 15.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "Error", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 770000.0, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 482440.0, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 608990.6, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 608990.6, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 612300.0, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": "Error", 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 629380.0, 
+                        "row": 10
+                    }
+                ], 
+                "name": "包2"
+            }, 
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "包1", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.209, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 14.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "Error", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 690687.0, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 461440.0, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 595783.3571428572, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 595783.3571428572, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 612537.5, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": "Error", 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 629380.0, 
+                        "row": 10
+                    }
+                ], 
+                "name": "包1"
+            }, 
+            {
+                "cells": [
+                    {
+                        "col": 19, 
+                        "name": "num", 
+                        "value": "包2", 
+                        "row": 0
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_gm3", 
+                        "value": 0.209, 
+                        "row": 1
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "num_company", 
+                        "value": 15.0, 
+                        "row": 2
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner", 
+                        "value": "Error", 
+                        "row": 3
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "min", 
+                        "value": 770000.0, 
+                        "row": 4
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "max", 
+                        "value": 482440.0, 
+                        "row": 5
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average", 
+                        "value": 608990.6, 
+                        "row": 6
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "average_no_peak", 
+                        "value": 608990.6, 
+                        "row": 7
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "median", 
+                        "value": 612300.0, 
+                        "row": 8
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "winner_price", 
+                        "value": "Error", 
+                        "row": 9
+                    }, 
+                    {
+                        "col": 19, 
+                        "name": "nkt_price", 
+                        "value": 629380.0, 
+                        "row": 10
+                    }
+                ], 
+                "name": "包2"
+            }
+        ]
+    }
+]
