@@ -33,7 +33,7 @@ class ExcelHandler():
 			self.files = results
 			return results
 
-	def get_data_from_xls(self,sheet_filter=None,cells=[]):
+	def get_data_from_xls(self,sheet_filter = None,cells = []):
 		for file in self.files:
 			if re.search(r'.xls$',file):
 				try:
@@ -44,17 +44,39 @@ class ExcelHandler():
 				data_wb = DataWorkbook(file)
 
 				for sht in wb.sheets():
-					if re.search(sheet_filter,sht.name):
-						logging.warning('sht'+sht.name)
-						data_sheet.cells = [DataCell(name,row,col,sht.cell_value(row,col)) for name,row,col in cells]
-						data_wb.sheets.append(data_sheet)
+					if sheet_filter:
+						if not re.search(sheet_filter,sht.name):
+							continue
+					data_sheet = DataSheet(sht.name)
+					# logging.warning('sht'+sht.name)
+					# data_sheet.cells = [DataCell(name,row,col,sht.cell_value(row,col)) for name,row,col in cells]
+					# logging.error('in sheet loop '+sht.name)
+					cell_list = []
+					for name,row,col in cells: 
+						# logging.error('in cell loop '+name+","+str(row)+","+str(col))
+						# try:
+						# 	cell_value = sht.cell_value(row,col)
+						# except:
+						# 	logging.error('cell(%d,%d) value error' %(row,col)) 
+						# 	cell_value = None
+						cell_value = "test"
+						logging.error( sht.cell_type(row,col))
+						
+						cell_list.append(DataCell(name,row,col,cell_value))
+						# data_sheet.cells.append(DataCell(name,row,col,cell_value))
+						# logging.error(len(data_sheet.cells))
+					data_sheet.cells = cell_list
+
+					data_wb.sheets.append(data_sheet)
 		self.data_wb = data_wb
 		return data_wb
 
-	def save_data_wb_to_json(self,file_name=""):
+	def save_to_json(self,file_name="",obj = None):
 		if file_name == "":
 			file_name = "data" + self.get_datetime_str() + ".json"
-		json_str = json.dumps(self.data_wb,default = lambda o:o.__dict__,indent = 4)
+		if obj == None:
+			obj = self.data_wb
+		json_str = json.dumps(obj,default = lambda o:o.__dict__,indent = 4)
 		self.save_to_file(file_name)
 	
 	def save_to_file(self,result_file_name = "",content ="hello world"):
@@ -68,12 +90,6 @@ class ExcelHandler():
 	
 	def get_datetime_str(self):
 		return datetime.datetime.now().strftime('%y%m%d_%H-%M-%S')
-
-
-
-
-
-# cells = [DataCell(name = name,row = row,col = col) for name,row,col in cells_data]
 
 
 class DataCell():
@@ -92,8 +108,9 @@ class DataSheet():
 	def __init__(self,name,cells = []):
 		self.name = name
 		self.cells = cells
+
 class DataWorkbook():
-	def __init__(self,name,sheets=[]):
+	def __init__(self,name,sheets = []):
 		self.name = name 
 		self.sheets = sheets
 
@@ -104,6 +121,7 @@ def unit_test():
 	print hand.get_datetime_str()
 	hand.save_to_file()
 	hand.save_to_file("sym.txt",u"大哥回答过")
+
 def unit_test2():
 	hand = ExcelHandler()
 	folder = r"E:\kuaipan\github\excel_handler\test_xls"
@@ -111,7 +129,7 @@ def unit_test2():
 	# for f in files:
 	# 	print f
 	hand.get_data_from_xls(
-		sheet_filter = u'包',
+		# sheet_filter = u'包',
 		cells = [
 		(u"num",0,19),
 		(u"nkt_gm3",1,19),
@@ -127,36 +145,18 @@ def unit_test2():
 		])
 	print hand.data_wb.name
 	for sht in hand.data_wb.sheets:
-		print '-',sht.name
+		print '--',sht.name
+		for cell in sht.cells:
+			print '----',cell.name,cell.value
 	# data_wb = DataWorkbook()
+	# print dir(hand.data_wb),dir(hand.data_wb.sheets[0]),dir(hand.data_wb.sheets[0].cells[0])
+	# hand.save_to_json()
+	# print json.dumps(hand.data_wb, default = lambda o:o.__dict__, indent = 4)
+	# print json.dumps(hand.data_wb, indent = 4)
+	# print hand.data_wb.sheets
+
 
 
 
 if __name__ == "__main__":
-	# hand = ExcelHandler()
-	# cur_dir = os.path.dirname(os.path.abspath(__file__))
-	# dir = cur_dir
-	# dir = r"D:\kuaipan\github\2016sis"
-	
-	# files = hand.find_filenames(dir,incld_path = True,re_filter =r'py$')
-	# for f in files:
-	# 	print f
-
-	# hand = ExcelHandler()
-	# hand.find_filenames(dir,re_filter = r'.xls$')
-	cells_data =[(u"num",0,19),
-	(u"nkt_gm3",1,19),
-	(u"num_company",2,19),
-	(u"winner",3,19),
-	(u"min",4,19),
-	(u"max",5,19),
-	(u"average",6,19),
-	(u"average_no_peak",7,19),
-	(u"median",8,19),
-	(u"winner_price",9,19),
-	(u"nkt_price",10,19)
-	]
-	# data_wb = hand.get_data_from_xls(sheet_filter = r"[(包)(项目)]",cells = cells_data)
 	unit_test2()
-
-	# print files
