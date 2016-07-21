@@ -11,7 +11,7 @@ class ExcelHandler():
 		self.folder = folder_path
 		# pass
 
-	def find_filenames(self,folder_path = '',incld_path = True,re_filter = None):
+	def get_filenames(self,folder_path = '',incld_path = True,re_filter = None):
 		'''
 		incld_path: 输出是否包含目录
 		re_filter : 文件名过滤器,用正则表达式
@@ -86,22 +86,25 @@ class ExcelHandler():
 		obj 要被转换的对象,如果省略,则转换遍历文件抓取的工作簿数据
 		"""
 		if file_name == "":
-			file_name = "data" + self.get_datetime_str() + ".json"
+			file_name = "JSON" + self.get_datetime_str() + ".json"
 		if obj == None:
 			obj = self.data_wbs
 		json_str = json.dumps(obj,default = lambda o:o.__dict__,indent = 4,ensure_ascii = False)
-		self.save_to_file(file_name,json_str)
+		self.save_to_file(result_file_name = file_name,content = json_str)
 	
-	def save_to_file(self,result_file_name = "",content =""):
+	def save_to_file(self,result_file_name = "",content ="",sub_folder_name = "outputs"):
 		"""
 		将content内容(是一个字符串),存入到命名的txt文件中
 		如果省略名称,则用时间自动命名
 		"""
 		cur_dir = os.path.dirname(os.path.abspath(__file__))
+		folder_to_save = os.path.join(cur_dir,sub_folder_name)
+		if not os.path.exists(folder_to_save):
+			os.mkdir(folder_to_save)
 
 		if result_file_name == "":
-			result_file_name = 'save' + self.get_datetime_str() +".txt"
-		with open(os.path.join(cur_dir,result_file_name),"w") as result_file:
+			result_file_name = 'Data' + self.get_datetime_str() +".txt"
+		with open(os.path.join(folder_to_save,result_file_name),"w") as result_file:
 			result_file.write(content.encode('utf-8'))
 
 		print "Saved to file: " + result_file_name
@@ -110,14 +113,14 @@ class ExcelHandler():
 	def get_datetime_str(self):
 		return datetime.datetime.now().strftime('%Y%m%d_%H-%M-%S-%f')
 
-	def print_data(self,to_print = True,to_save = True):
+	def print_data(self,to_print = True,to_save = True,separator ="|"):
 		content = ""
-		title_line =  'file_name,'+','.join(["%s" %cell.name for cell in self.data_wbs[0].sheets[0].cells])
+		title_line =  u'file_name'+ separator +separator.join(["%s" %cell.name for cell in self.data_wbs[0].sheets[0].cells])
 		# print title_line
 		content += title_line+"\n"
 		for wb in self.data_wbs:
 			for sht in wb.sheets:
-				data_line = wb.name + "," +",".join("%s" %cell.value for cell in sht.cells)
+				data_line = wb.name + separator +separator.join("%s" %cell.value for cell in sht.cells)
 				data_line = data_line.replace('\n','')
 				content += data_line+'\n'
 		if to_print:
@@ -125,20 +128,23 @@ class ExcelHandler():
 		if to_save:
 			self.save_to_file(content = content)		
 		return content
+
 	def write_data_to_xlsx(self,folder = "",wb_filter = r".xlsx$",sheet_filter = None,cells=[]):
 		"""
 		向指定目录下的xlsx文件中写入cells中描述的数据
 		folder 指定目录,如果不填,就用初始化对象的folder
 		wb_filter,sheet_filter是工作簿和工作表名称的过滤器,需要填写正则表达式
 		wb_filter默认筛出xlsx文件
-		cells要写入的数据,是一个数组,数组元素格式为(row,col,value="")
+		cells要写入的数据,是一个数组,数组元素格式为(value="",row,col)
+		cells中的行和列是从1开始的,因为是xlsx文件,用openpyxl处理的
+		
 		"""
 		if folder == "":
 			folder = self.folder
 		else:
 			self.folder = folder
 
-		file_names = self.find_filenames(folder_path = folder,incld_path = True,re_filter = wb_filter)
+		file_names = self.get_filenames(folder_path = folder,incld_path = True,re_filter = wb_filter)
 		for file_name in file_names:
 			logging.warning('opening '+file_name)
 			wb = openpyxl.load_workbook(file_name)
@@ -147,11 +153,20 @@ class ExcelHandler():
 					if not re.search(sheet_filter,sht.title):
 						continue
 				logging.warning('working on '+sht.title)
-				for row,col,value in cells:
+				for value,row,col in cells:
 					sht.cell(row = row,column = col).value = value
 
 			wb.save(file_name)
-			logging.error(file_name+" saved")
+			logging.error(file_name+" saved!")
+
+	def get_and_print_data(self,folder,file_filter = r".xls$", sheet_filter = None, cells=[],to_print = False,to_save = True,to_json = True):
+		'自动完成从表格中抓取数据的一系列操作,建立了一个instance之后,可以直接调用'
+		# handler = ExcelHandler()
+		self.get_filenames(folder_path = folder,re_filter = file_filter)
+		self.get_data_from_xls(sheet_filter = sheet_filter,cells = cells)
+		self.print_data(to_print = to_print,to_save = to_save)
+		if to_json:
+			self.save_to_json()
 
 
 
@@ -183,7 +198,7 @@ def unit_test():
 def unit_test2():
 	hand = ExcelHandler()
 	folder = r"E:\kuaipan\github\excel_handler\test_xls"
-	files = hand.find_filenames(folder,re_filter = r'.xls$')
+	files = hand.get_filenames(folder,re_filter = r'.xls$')
 	# for f in files:
 	# 	print f
 	hand.get_data_from_xls(
@@ -205,7 +220,7 @@ def unit_test2():
 	hand.save_to_json()
 def get_sheet_names(folder):
 	hand = ExcelHandler()
-	hand.find_filenames(folder)
+	hand.get_filenames(folder)
 	hand.get_data_from_xls()
 	for wb in hand.data_wbs:
 		for sht in wb.sheets:
@@ -213,7 +228,7 @@ def get_sheet_names(folder):
 def get_bid_data():
 	folder = r"C:\Users\adam\Desktop\bidding_xls"
 	handler = ExcelHandler()
-	handler.find_filenames(folder)
+	handler.get_filenames(folder)
 
 	handler.get_data_from_xls(
 		sheet_filter = u"基本信息",
@@ -250,7 +265,7 @@ def test_new_line():
 
 	folder = r"C:\Users\adam\Desktop\bidding_xls"
 	handler = ExcelHandler()
-	handler.find_filenames(folder,re_filter = r'-010|-011')
+	handler.get_filenames(folder,re_filter = r'-010|-011')
 
 	handler.get_data_from_xls(
 		sheet_filter = u"基本信息",
