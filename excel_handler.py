@@ -137,7 +137,7 @@ class ExcelHandler():
 		wb_filter默认筛出xlsx文件
 		cells要写入的数据,是一个数组,数组元素格式为(value="",row,col)
 		cells中的行和列是从1开始的,因为是xlsx文件,用openpyxl处理的
-		
+
 		"""
 		if folder == "":
 			folder = self.folder
@@ -189,6 +189,7 @@ class DataSheet():
 class DataWorkbook():
 	def __init__(self,name,sheets = []):
 		self.name = name.decode('gbk')#处理中文文件名问题
+		# self.name = name
 		self.sheets = sheets
 def unit_test():
 	hand = ExcelHandler()
