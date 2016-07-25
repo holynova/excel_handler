@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from excel_handler import *
 def find_old_qef():
-	folder = r"C:\Users\adam\Desktop\jiangsu\old"
+	folder = r"C:\Users\adam\Desktop\fujian3\old"
 	handler = ExcelHandler()
 	handler.get_and_print_data(
 		folder = folder,
@@ -19,7 +19,7 @@ def find_old_qef():
 		to_json = False)
 
 def find_new_qef():
-	folder = r"C:\Users\adam\Desktop\jiangsu\new"
+	folder = r"C:\Users\adam\Desktop\fujian3\new"
 	handler = ExcelHandler()
 	handler.get_and_print_data(
 		folder = folder,
@@ -71,20 +71,21 @@ def write_data():
 		('=INDEX(a:a,MATCH("常州安凯特电缆有限公司",B:B,0))',7,6),
 		('=RANK(C109,C:C,1)',8,6),
 		])
+def merge_order():
+	handler = ExcelHandler()
+	handler.merge_sheets(
+		folder = r"C:\Users\adam\Desktop\order",
+		wb_filter = r".xlsx$",
+		sheet_filter = r"2016",
+		key_column =1,
+		header_rows = 1
+		)
 
 if __name__ == "__main__":
 	# write_data()
-	find_new_qef()
-	find_old_qef()
-	pass
-	# find_old()
-	# find_new()
-	# find_new3()
-	# find_fujian()
-	# find_old()
-	# find_old()
-	# find_new()
-
+	# find_new_qef()
+	# find_old_qef()
+	merge_order()
 
 
 

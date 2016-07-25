@@ -167,8 +167,143 @@ class ExcelHandler():
 		self.print_data(to_print = to_print,to_save = to_save)
 		if to_json:
 			self.save_to_json()
+	def merge_sheets(
+		self,folder = "",
+		wb_filter = r".xlsx$",
+		sheet_filter = None,
+		header_rows = 0,
+		key_column = 1,
+		save_dir = os.path.dirname(os.path.abspath(__file__))):
+		"""
+		合并Worksheets到新的表格
+		header_rows标题行占几行?复制时候可以滤除
+		key_column关键列,从表中复制的最大行数,由关键列确定,从1行开始,一直找到关键列不为空的行数.
+
+		"""
+		if folder == "":
+			folder = self.folder
+		else:
+			self.folder = folder
+
+		file_names = self.get_filenames(folder_path = folder,incld_path = True,re_filter = wb_filter)
+		merged_wb = openpyxl.Workbook()
+		merged_sht = merged_wb.active
+		#-----------------------------
+		#从第一个sheet中粘贴标题行
+		# wb_first = openpyxl.load_workbook(file_names[0])
+		# for sht_first in wb.worksheets:
+		# 	if sheet_filter:
+		# 		if not re.search(sheet_filter,sht.title):
+		# 			continue
+
+		#-----------------------------
+		row_cnt = header_rows + 1
+		cnt_sheet = 0
+		for file_name in file_names:
+			# logging.warning('opening '+file_name)
+			wb = openpyxl.load_workbook(file_name)
+			for sht in wb.worksheets:
+				if sheet_filter:
+					if not re.search(sheet_filter,sht.title):
+						continue
+				(my_dir,wb_name) = os.path.split(file_name)
+				ws_name = sht.title
+				max_row = self.get_max_row(sht,1)
+				max_col = sht.max_column
+				
+				#一次性添加标题行
+				if(cnt_sheet == 0):
+					self.copy_range_by_num(
+						from_sht = sht,
+						to_sht = merged_sht,
+						from_first_row = 1,
+						from_last_row = header_rows,
+						from_first_col = 1,
+						from_last_col = max_col,
+						to_first_row = 1,
+						to_first_col = 1)
+				#--------------------
+
+				#开始合并
+				self.copy_range_by_num(
+					from_sht = sht,
+					to_sht = merged_sht,
+					from_first_row = header_rows+1,
+					from_last_row = max_row,
+					from_first_col = 1,
+					from_last_col = max_col,
+					to_first_row = row_cnt,
+					to_first_col = 1)
+				row_cnt += max_row - (header_rows + 1) + 14
+				print wb_name,
+				print u" 的工作表: %s 中,复制了%d列,%d行" %(ws_name,sht.max_column,self.get_max_row(sht,1))
+				cnt_sheet += 1
+		self.save_as_xlsx(merged_wb,name = "merged_order"+self.get_datetime_str(),save_dir = save_dir)
+		
 
 
+
+	def save_as_xlsx(self,workbook,name="output",save_dir=""):
+		if save_dir == "":
+			save_dir = self.get_output_dir()
+		new_filename = save_dir+"\\"+ name +'.xlsx'
+		print "saved to ",new_filename
+		workbook.save(new_filename)
+
+	def get_output_dir(self):
+		cur_dir = os.path.dirname(os.path.abspath(__file__))
+		folder = "output_" + datetime.datetime.now().strftime('%Y%m%d_%H-%M-%S-%f')
+		save_dir = os.path.join(cur_dir,folder)
+		if not os.path.exists(save_dir):
+			os.mkdir(save_dir)
+		return save_dir
+
+	def get_max_row(self,sht,key_column):
+		"""
+		找到最大行数,依据是key_column这一列不为空
+		key_column是从1开始的数字
+		"""
+		row = 1
+		while sht.cell(row = row,column = key_column).value:
+			row += 1
+		return row - 1
+
+	def copy_range(self,from_sht,to_sht,from_range_str,to_cell_str):
+		"""
+		复制区域函数
+		从from_sht中,将form_range_str区域的内容,复制到to_sheet中,粘贴起点是to_cell_str
+		"""
+		(first_row,first_col) = self.get_cell_pos(to_cell_str)
+		row_cnt = first_row
+		col_cnt = first_col
+
+
+		for row in from_sht.iter_rows(from_range_str):
+			for cell in row:
+				to_sht.cell(row = row_cnt,column = col_cnt).value = cell.value
+				col_cnt += 1
+			row_cnt += 1 
+			col_cnt  = first_col
+
+	def copy_range_by_num(self,from_sht,to_sht,
+		from_first_row,from_last_row,from_first_col,from_last_col,
+		to_first_row,to_first_col):
+		"""
+		拷贝区域,所有都是用数字表示,行号和列号都是从1开始
+
+		"""
+		num_rows = from_last_row - from_first_row + 1
+		num_cols = from_last_col - from_first_col + 1
+		for row in range(num_rows):
+			for col in range(num_cols):
+				to_sht.cell(row = to_first_row + row, column = to_first_col + col).value =\
+				from_sht.cell(row = from_first_row + row, column = from_first_col + col).value
+				to_sht.cell(row = to_first_row + row, column = to_first_col + col).style =\
+				from_sht.cell(row = from_first_row + row, column = from_first_col + col).style
+
+		# for row in range(from_first_row,from_last_row+1):
+		# 	for col in range(from_first_col,from_last_col+1):
+		# 		to_sht.cell(row = to_first_row +).value = from_sht(row = row,column = col).value()
 
 class DataCell():
 	def __init__(self,name,row = -1,col = -1,value = None):
@@ -191,34 +326,36 @@ class DataWorkbook():
 		self.name = name.decode('gbk')#处理中文文件名问题
 		# self.name = name
 		self.sheets = sheets
-def unit_test():
-	hand = ExcelHandler()
-	print hand.get_datetime_str()
-	hand.save_to_file()
-	hand.save_to_file("sym.txt",u"大哥回答过")
-def unit_test2():
-	hand = ExcelHandler()
-	folder = r"E:\kuaipan\github\excel_handler\test_xls"
-	files = hand.get_filenames(folder,re_filter = r'.xls$')
-	# for f in files:
-	# 	print f
-	hand.get_data_from_xls(
-		sheet_filter = u'包',
-		cells = [
-		(u"num",0,19),
-		(u"nkt_gm3",1,19),
-		(u"num_company",2,19),
-		(u"winner",3,19),
-		(u"min",4,19),
-		(u"max",5,19),
-		(u"average",6,19),
-		(u"average_no_peak",7,19),
-		(u"median",8,19),
-		(u"winner_price",9,19),
-		(u"nkt_price",10,19)
-		])
 
-	hand.save_to_json()
+
+# def unit_test():
+# 	hand = ExcelHandler()
+# 	print hand.get_datetime_str()
+# 	hand.save_to_file()
+# 	hand.save_to_file("sym.txt",u"大哥回答过")
+# def unit_test2():
+# 	hand = ExcelHandler()
+# 	folder = r"E:\kuaipan\github\excel_handler\test_xls"
+# 	files = hand.get_filenames(folder,re_filter = r'.xls$')
+# 	# for f in files:
+# 	# 	print f
+# 	hand.get_data_from_xls(
+# 		sheet_filter = u'包',
+# 		cells = [
+# 		(u"num",0,19),
+# 		(u"nkt_gm3",1,19),
+# 		(u"num_company",2,19),
+# 		(u"winner",3,19),
+# 		(u"min",4,19),
+# 		(u"max",5,19),
+# 		(u"average",6,19),
+# 		(u"average_no_peak",7,19),
+# 		(u"median",8,19),
+# 		(u"winner_price",9,19),
+# 		(u"nkt_price",10,19)
+# 		])
+
+# 	hand.save_to_json()
 def get_sheet_names(folder):
 	hand = ExcelHandler()
 	hand.get_filenames(folder)
@@ -262,39 +399,48 @@ def get_bid_data():
 		])
 	handler.save_to_json(u'包数据'+handler.get_datetime_str()+'.json')
 	handler.print_data()
-def test_new_line():
+# def test_new_line():
 
-	folder = r"C:\Users\adam\Desktop\bidding_xls"
-	handler = ExcelHandler()
-	handler.get_filenames(folder,re_filter = r'-010|-011')
+# 	folder = r"C:\Users\adam\Desktop\bidding_xls"
+# 	handler = ExcelHandler()
+# 	handler.get_filenames(folder,re_filter = r'-010|-011')
 
-	handler.get_data_from_xls(
-		sheet_filter = u"基本信息",
-		cells =[
-		(u'工作号',1,1),
-		(u'开标时间',2,1),
-		(u'销售员',3,1),
-		(u'项目单位',4,1),
-		(u'项目名称',5,1),
-		(3.14,6,1),
-		])
-	# handler.save_to_json(u'基本信息.json')
-	handler.print_data()
-def unit_test3():
-	handler = ExcelHandler()
-	folder = r"E:\kuaipan\github\excel_handler\test_xlsx"
-	handler.write_data_to_xlsx(folder = folder,
-		wb_filter = r".xlsx$",
-		sheet_filter = ur"[(包)(标段)]",
-		cells=[
-		(1,22,u"测试数据"),
-		(2,22,3.14159),
-		(3,22,"=today()"),
-		(4,22,"=max(B:B)"),
-		])
+# 	handler.get_data_from_xls(
+# 		sheet_filter = u"基本信息",
+# 		cells =[
+# 		(u'工作号',1,1),
+# 		(u'开标时间',2,1),
+# 		(u'销售员',3,1),
+# 		(u'项目单位',4,1),
+# 		(u'项目名称',5,1),
+# 		(3.14,6,1),
+# 		])
+# 	# handler.save_to_json(u'基本信息.json')
+# 	handler.print_data()
+# def unit_test3():
+# 	handler = ExcelHandler()
+# 	folder = r"E:\kuaipan\github\excel_handler\test_xlsx"
+# 	handler.write_data_to_xlsx(folder = folder,
+# 		wb_filter = r".xlsx$",
+# 		sheet_filter = ur"[(包)(标段)]",
+# 		cells=[
+# 		(1,22,u"测试数据"),
+# 		(2,22,3.14159),
+# 		(3,22,"=today()"),
+# 		(4,22,"=max(B:B)"),
+# 		])
+# def unit_test4():
+# 	handler = ExcelHandler()
+# 	handler.merge_sheets(
+# 		folder = r"C:\Users\adam\Desktop\order",
+# 		wb_filter = r".xlsx$",
+# 		sheet_filter = r"2016",
+# 		key_column =1,
+# 		header_rows = 1)
 
 if __name__ == "__main__":
-	unit_test3()
+	# unit_test4()
+	pass
 	# get_sheet_names(r"C:\Users\adam\Desktop\bidding_xls")
 	# get_bid_data()
 	# test_new_line()
