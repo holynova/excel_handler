@@ -213,15 +213,17 @@ class ExcelHandler():
 				
 				#一次性添加标题行
 				if(cnt_sheet == 0):
-					self.copy_range_by_num(
-						from_sht = sht,
-						to_sht = merged_sht,
-						from_first_row = 1,
-						from_last_row = header_rows,
-						from_first_col = 1,
-						from_last_col = max_col,
-						to_first_row = 1,
-						to_first_col = 1)
+					if header_rows > 0:
+						print u"添加标题行"
+						self.copy_range_by_num(
+							from_sht = sht,
+							to_sht = merged_sht,
+							from_first_row = 1,
+							from_last_row = header_rows,
+							from_first_col = 1,
+							from_last_col = max_col,
+							to_first_row = 1,
+							to_first_col = 1)
 				#--------------------
 
 				#开始合并
@@ -234,7 +236,8 @@ class ExcelHandler():
 					from_last_col = max_col,
 					to_first_row = row_cnt,
 					to_first_col = 1)
-				row_cnt += max_row - (header_rows + 1) + 14
+				row_cnt += max_row - (header_rows + 1) + 1
+				print cnt_sheet,
 				print wb_name,
 				print u" 的工作表: %s 中,复制了%d列,%d行" %(ws_name,sht.max_column,self.get_max_row(sht,1))
 				cnt_sheet += 1
