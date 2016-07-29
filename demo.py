@@ -19,7 +19,7 @@ def find_old_qef():
 		to_json = False)
 
 def find_new_qef():
-	folder = r"C:\Users\adam\Desktop\fujian3\new"
+	folder = r"C:\Users\adam\Desktop\xls_sgcc"
 	handler = ExcelHandler()
 	handler.get_and_print_data(
 		folder = folder,
@@ -42,8 +42,8 @@ def find_new_qef():
 def write_data():
 	h = ExcelHandler()
 	h.write_data_to_xlsx(
-		folder = ur"E:\kuaipan\nkt文件存档\CSC工作流\CSC报价\2016年7月11日 代替王莺 福建电网报价\2016年7月22日 新模拟",
-		wb_filter = ur"2016年7月21日 福建居配工程-开标一览表.xlsx$",
+		folder = ur"E:\kuaipan\非投标任务\2016年7月26日 三省开标记录",
+		wb_filter = ur"江苏10kv电缆开标记录.xlsx$",
 		sheet_filter = r"Sheet",
 		cells=[
 		(u'最高价',1,5),
@@ -54,9 +54,9 @@ def write_data():
 		(u'厂家数',6,5),
 		(u'安凯特排名',7,5),
 		(u'nkt新排名',8,5),
-		(u'nkt新价格',109,2),
-		(u'=1/10000',109,3),
-		('',104,3),
+		# (u'nkt新价格',109,2),
+		# (u'=1/10000',109,3),
+		# ('',104,3),
 		
 
 
@@ -69,7 +69,7 @@ def write_data():
 		('=INDEX(C:C,MATCH("常州安凯特电缆有限公司",B:B,0))',5,6),
 		('=max(a:a)',6,6),
 		('=INDEX(a:a,MATCH("常州安凯特电缆有限公司",B:B,0))',7,6),
-		('=RANK(C109,C:C,1)',8,6),
+		# ('=RANK(C109,C:C,1)',8,6),
 		])
 def merge_order():
 	handler = ExcelHandler()
@@ -80,12 +80,29 @@ def merge_order():
 		key_column =1,
 		header_rows = 1
 		)
+def get_unit_price_from_new_qef():
+	folder = r"C:\Users\adam\Desktop\xls_sgcc"
+	handler = ExcelHandler()
+	# cells = [(u"序号"+str(i),i,6) for i in range(9,18)]
+	cells = []
+	for i in range(9,18):
+		cells.append((u"序号"+str(i),i,1))
+		cells.append((u"单价"+str(i),i,6))
+
+	handler.get_and_print_data(
+		folder = folder,
+		file_filter = r".xls$",
+	 	sheet_filter = "Calculation",
+		cells=cells,
+		to_print = False,
+		to_save = True,
+		to_json = False)
 
 if __name__ == "__main__":
 	# write_data()
 	# find_new_qef()
 	# find_old_qef()
-	merge_order()
+	# merge_order()
 
-
+	get_unit_price_from_new_qef()
 
